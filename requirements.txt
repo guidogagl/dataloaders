@@ -1,0 +1,9 @@
+numpy
+pandas
+
+scikit-learn-intelex
+
+lightning
+torch 
+torchvision 
+torchaudio

@@ -1,2 +1,2 @@
 # dataloaders
-This repo provides usefull pytorch dataloaders for different datasets 
+This repo provides usefull pytorch lightning dataloaders for different datasets 
