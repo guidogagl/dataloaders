@@ -11,9 +11,9 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
-from components.UCIDatasetLoader import UCIDatasetLoader
-from components.TabularDataset import TabularDataset
-from components.constant import *
+from datamodules.components.UCIDatasetLoader import UCIDatasetLoader
+from datamodules.components.TabularDataset import TabularDataset
+from datamodules.components.constant import *
 
 import os
 import pytorch_lightning as pl
