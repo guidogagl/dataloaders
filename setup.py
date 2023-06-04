@@ -1,16 +1,20 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='my_package',
-    version='0.1.0',
-    description='Descrizione del tuo pacchetto',
-    author='Il tuo nome',
-    author_email='tua@email.com',
+    name='datamodules',
+    version='0.0.1',
+    description='A package to share some datamodules in for pythorch lightning',
+    author='Guido Gagliardi',
+    author_email='guido.gagliardi@phd.unipi.it',
     packages=find_packages(exclude=['tests']),
     install_requires=[
         'numpy',
+        'pandas',
+        'scikit-learn-intelex',
+        'lightning',
         'torch',
-        'pytorch-lightning'
+        'torchvision',
+        'torchaudio'
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
