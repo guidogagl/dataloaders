@@ -5,10 +5,11 @@ from torchvision.datasets import MNIST
 from torch.utils.data import DataLoader, random_split
 import pytorch_lightning as pl
 import torch
+from lightning import LightningDataModule
 
 from datamodules.components.constant import DATA_FOLDER_
 
-class MNISTDataModule(pl.LightningDataModule):
+class MNISTDataModule(LightningDataModule):
     def __init__(self, data_dir= DATA_FOLDER_ + "MNIST/", batch_size=64, train_val_split=0.8, random_seed=42, num_workers=None, num_classes : int = None, input_size : int = None):
         super().__init__()
         self.data_dir = data_dir

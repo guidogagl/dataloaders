@@ -5,10 +5,10 @@ from torchvision.datasets import CIFAR10
 from torch.utils.data import DataLoader, random_split
 import pytorch_lightning as pl
 import torch
-
+from lightning import LightningDataModule
 from datamodules.components.constant import DATA_FOLDER_
 
-class CIFAR10DataModule(pl.LightningDataModule):
+class CIFAR10DataModule(LightningDataModule):
     def __init__(self, data_dir = DATA_FOLDER_ + "CIFAR10/", batch_size=64, train_val_split=0.8, random_seed=42, num_workers=None):
         super().__init__()
         self.data_dir = data_dir

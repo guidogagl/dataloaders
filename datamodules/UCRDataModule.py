@@ -7,8 +7,8 @@ import numpy as np
 from torch.utils.data import DataLoader, random_split
 import pytorch_lightning as pl
 import torch
-
-class UCRDataModule(pl.LightningDataModule):
+from lightning import LightningDataModule
+class UCRDataModule(LightningDataModule):
     def __init__(self, data_dir='./data', dataset_name='ECG200', batch_size=64, train_val_split=0.8, random_seed=42, num_workers=None):
         super().__init__()
         self.data_dir = data_dir
